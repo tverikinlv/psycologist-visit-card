@@ -1,6 +1,6 @@
 .hero {
     min-height: 623px;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.20) 37.50%, rgba(0, 0, 0, 0.00) 100%), url('./img/hero-bg-mobile.png'), lightgray -416.403px -142.749px / 272.86% 142.277% no-repeat;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.20) 37.50%, rgba(0, 0, 0, 0.00) 100%), url('../img/hero-bg-mobile.png'), lightgray -416.403px -142.749px / 272.86% 142.277% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -42,7 +42,7 @@
         min-height: 840px;
         padding-top: 60px;
         padding-bottom: 60px;
-        background: url('./img/texture-light.png');
+        background: url('../img/texture-light.png');
    
 
         &__text-box {
@@ -52,7 +52,7 @@
             justify-content: start;
             gap: 40px;
 
-            background: url('./img/hero-bg-desktop.png');
+            background: url('../img/hero-bg-desktop.png');
             background-repeat: no-repeat;
             background-position: right;
     

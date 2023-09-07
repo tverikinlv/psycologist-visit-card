@@ -18,7 +18,7 @@
 
 	@media (min-width: 480px) {
 		position: static;
-		background: url('./img/texture-light.png');
+		background: url('../img/texture-light.png');
 
 		&__logo svg {
 			width: 46px;
@@ -64,7 +64,7 @@
 	justify-content: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background: url('./img/texture-dark.png');
+	background: url('../img/texture-dark.png');
 	transition: all 0.2s ease-in;
 }
 

@@ -4,7 +4,7 @@
     min-height: 506px;
 
     border-radius: 10px;
-    background: linear-gradient(26deg, rgba(245, 246, 240, 0.28) 0.77%, rgba(245, 246, 240, 0.28) 23.25%), url('./img/appointment-mobile-bg.png'), lightgray -213.125px -3.536px / 243.127% 156.741% no-repeat;
+    background: linear-gradient(26deg, rgba(245, 246, 240, 0.28) 0.77%, rgba(245, 246, 240, 0.28) 23.25%), url('../img/appointment-mobile-bg.png'), lightgray -213.125px -3.536px / 243.127% 156.741% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -48,7 +48,7 @@
         padding-top: 41px;
         padding-bottom: 60px;
         min-height: 638px;
-        background: url('./img/texture-light.png') repeat;
+        background: url('../img/texture-light.png') repeat;
 
         .container {
             display: flex;
