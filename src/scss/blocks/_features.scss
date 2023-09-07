@@ -1,0 +1,97 @@
+.features {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url('../../img/texture-dark.png') repeat;
+
+    &__headline {
+        color: var(--main-color);
+    }
+
+    &__paragraph {
+        color: var(--main-color);
+    }
+
+    @media (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__switchers-wrapper {
+            max-width: 800px;
+            margin-left: auto;
+        }
+    }
+}
+
+.features-switchers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    padding-top: 8px;
+    padding-bottom: 24px;
+
+
+
+    &__item {
+
+        input {
+            appearance: none;
+            display: none;
+        }
+
+        label {
+            display: block;
+            padding: 6px 16px;
+
+            background-color: var(--main-color);
+            border: 1px solid var(--main-color);
+            border-radius: 30px;
+
+            color: var(--accent-color);
+            font-family: var(--font-main);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 120%;
+
+            @media (min-width: 480px) {
+                font-size: 24px;
+            }
+        }
+
+        input:checked+label {
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.feature-description {
+    display: none;
+    transition: all 0.3s ease-in-out;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    @media (min-width: 480px) {
+        margin-left: auto;
+        max-width: 1160px;
+
+        img, picture {
+            width: 320px;
+            border-radius: 10px;
+        }
+
+        &.active {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 40px;
+        }
+
+        &__text-box{
+            max-width: 800px;
+        }
+    }
+}

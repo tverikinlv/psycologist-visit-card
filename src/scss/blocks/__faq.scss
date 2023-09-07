@@ -1,0 +1,97 @@
+.faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url('../../img/texture-light.png');
+
+    &__headline {
+        color: var(--accent-color);
+    }
+
+    &__accordion {
+        width: 100%;
+        font-family: var(--font-main);
+    }
+
+
+    &__accordion-details {
+        font-size: 14px;
+        padding: 1rem 0;
+
+        border-bottom: 1px solid var(--accent-color);
+
+    }
+
+    &__accordion-summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-weight: 500;
+    }
+
+    &__accordion-summary:hover {
+        cursor: pointer;
+    }
+
+    &__accordion-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    &__accordion-summary::after {
+        content: "+";
+        
+        width: 18px;
+        height: 18px;
+
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        
+        border-radius: 50%;
+        font-size: 32px;
+        line-height: 18px;
+        font-weight: 400;
+        
+        transition: all 0.3s ease-in-out;
+
+        @media (min-width: 480px) {
+            width: 28px;
+            height: 28px;
+
+            font-size: 52px;
+            line-height: 28px;
+        }
+    }
+
+    &__accordion-details[open]>.faq__accordion-summary {
+        padding-bottom: 8px;
+    }
+
+    &__accordion-details[open]>.faq__accordion-summary::after {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        color: var(--main-color);
+        transform: rotate(-45deg);
+
+        @media (min-width: 480px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    @media (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__accordion {
+            margin-left: auto;
+            width: 800px;
+        }
+
+        &__accordion-details {
+            font-size: 28px;
+        }
+    }
+}

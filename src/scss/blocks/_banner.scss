@@ -1,0 +1,38 @@
+.banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url('../../img/banner-mobile-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__slogan {
+        display: block;
+        width: 161px;
+        color: var(--main-color);
+        font-family: var(--font-accent);
+        font-size: 24px;
+        font-weight: 50;
+        line-height: 140%;
+    }
+
+
+    @media (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+       
+
+        background: url('../../img/banner-desktop-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+
+        &__slogan {
+            width: 800px;
+            margin-left: auto;
+            display: block;
+            font-size: 60px;
+        }
+    }
+}

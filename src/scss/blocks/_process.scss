@@ -1,0 +1,106 @@
+.process {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url('../../img/texture-dark.png') repeat;
+
+    &__headline {
+        color: var(--main-color);
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    &__item-marker {
+        height: 87px;
+        width: 87px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        border: 1px solid var(--main-color);
+        border-radius: 50%;
+
+        color: var(--main-color);
+        font-family: var(--font-accent);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 50;
+        line-height: 160%;
+    }
+
+    &__item-title {
+        color: var(--main-color);
+        font-family: var(--font-main);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        margin-bottom: 6px;
+    }
+
+    &__item-subtitle {
+        color: var(--main-color);
+        font-family: var(--font-main);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    @media (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        img {
+            display: none;
+        }
+
+        &__list {
+            justify-content: start;
+            gap: 50px 80px;
+            max-width: 800px;
+            margin-left: auto;
+        }
+
+        &__item {
+            width: 280px;
+            margin-bottom: 0px;
+        }
+
+        &__item-marker {
+            height: 147px;
+            width: 147px;
+            font-size: 72px;
+        }
+
+        &__item-title {
+            font-size: 24px;
+        }
+
+        &__item-subtitle {
+            font-size: 24px;
+        }
+    }
+}

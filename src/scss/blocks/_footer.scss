@@ -1,0 +1,124 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: url('../../img/texture-light.png');
+
+	&__divider {
+		height: 1px;
+		width: 100%;
+
+		margin-bottom: 16px;
+
+		border: 1px solid var(--accent-color);
+
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__logo-column {
+		span {
+			font-size: 8px;
+		}
+	}
+
+	&__logo img {
+		width: 30px;
+	}
+
+	&__contacts-box {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	&__contacts {
+		a {
+			display: flex;
+			align-items: center;
+			font-size: 8px;
+			margin-bottom: 5px;
+		}
+
+		a img {
+			margin-right: 12px;
+		}
+	}
+
+	&__social-links {
+		
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		margin-bottom: 10px;
+	}
+
+	&__nav-list {
+		li {
+			color: var(--accent-color);
+			text-align: right;
+			font-family: var(--font-main);
+			font-size: 8px;
+			font-weight: 400;
+			line-height: 160%;
+		}
+	}
+
+	@media (min-width: 480px) {
+		&__divider {
+			margin-bottom: 48px;
+		}
+
+		&__wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		&__logo-column {
+
+			span {
+				font-size: 16px;
+			}
+		}
+
+		&__logo {
+			margin-bottom: 24px;
+		}
+
+		&__logo img {
+			width: 46px;
+		}
+
+		&__contacts {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+
+			margin-bottom: 23px;
+
+
+			a {
+				font-size: 16px;
+			}
+
+			a img {
+				margin-right: 12px;
+			}
+		}
+
+		&__nav-list {
+			li {
+				color: var(--accent-color);
+				text-align: left;
+				font-family: var(--font-main);
+				font-size: 16px;
+
+				margin-bottom: 4px;
+			}
+		}
+	}
+}
